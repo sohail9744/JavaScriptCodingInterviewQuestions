@@ -65,7 +65,7 @@
 
 ## Day 10
 
-- To check ending of the string macthes with given character/s using inbuilt function
+- To check ending of the string matches with given character/s using inbuilt function
 - To check ending of the string with given character/s using custom implementation
 - To find the largest elements fro the 2 dimensional array.
 
