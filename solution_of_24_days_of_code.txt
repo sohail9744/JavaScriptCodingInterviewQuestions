@@ -483,7 +483,7 @@ console.log(confirmEnding("priya","a"))
 ===============================================================================================================================================================================
 Code 38: To check ending of the string with given character/s using custom
 function confirmEnding(str,target){
-   return str.substr(-target.length)===target
+   return str.substr(-1)===target
 }
 console.log(confirmEnding("priya","a"))
 ===============================================================================================================================================================================
