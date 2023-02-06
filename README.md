@@ -135,7 +135,7 @@ const inputB = [1, 2, 3, 4, 5, 1, 7, 6, 4, 3, 8];
 
 ## Day 13
 
-- Sum of all numbers from start to end given number
+- Print of all numbers from start to end given number
 
 ```javascript
 printSeries(1, 4);
