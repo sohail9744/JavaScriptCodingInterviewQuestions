@@ -33,6 +33,7 @@
 ## Day 5
 
 - To find a first pair from a number array whose sum is zero
+- Find all possible pairs  from a number array which some is zero.
 - To find a first pair from a number array whose sum is zero using indexing
 - To find the largest pair of the 2 elements using indexing with unsorted elements
 
