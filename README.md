@@ -539,3 +539,82 @@ const input = ["John", "Peter", "Sally", "Jane"];
 // Output
 { 0: "John", 1: "Peter", 2: "Sally", 3: "Jane" }
 ```
+# Day 1 - Solutions
+// Remove Duplicate characters from String
+```
+const value = "abcdabcd";
+const newArray = []
+const seen = {}
+
+for(let i = 0; i < value.length; i ++){
+    const initValue = value[i]
+    if(!seen[initValue]){
+        seen[initValue] = true;
+        newArray.push(initValue)
+    }
+}
+
+console.log(newArray.join(''))
+
+// Second Way
+const value = "abcdabcd";
+const sepValue = value.split('')
+const newArray = []
+const seen = {}
+
+for(let i = 0; i < sepValue.length; i ++){
+   if(!newArray.includes(sepValue[i])){
+       newArray.push(sepValue[i])
+   }
+}
+
+console.log(newArray.join(''))
+
+// Third Way
+
+const value = "abcdabcd";
+
+const newValue = [...new Set(value)]
+
+console.log(newValue.join(''))
+```
+```
+// Remove Duplicate characters from array of element and find the count of an elements using set
+
+const aArray = [1,2,3,1,4,5]
+const newValue = [... new Set(aArray)]
+console.log(newValue.join(''), "Count of new", newValue.length)
+```
+```
+// Remove Duplicate characters from array of element using filter
+
+const product = ["apple", "banana", "apple", "mango", "strawbery", "bery"]
+
+const newArray = []
+const seen = {}
+
+const remDupValue = product.filter((value) => {
+    if(!seen[value]){
+        seen[value] = true;
+        return true
+    }
+    return false
+})
+
+console.log(remDupValue.join(','))
+```
+```
+// String reverse without reversing of individual words (Array of elements can be reverse with reverse() method but for string it is won't possible so required to split and then join.
+
+const value = "Hello world from ChatGPT"
+
+const splitValue = value.split(' ')
+
+const store = []
+//reverse loop my brother
+for(let i = splitValue.length - 1; i > -1; i--){
+    store.push(splitValue[i])
+}
+
+console.log(store.join(' '))
+```
