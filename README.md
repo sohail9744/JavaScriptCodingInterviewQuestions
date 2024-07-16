@@ -618,3 +618,80 @@ for(let i = splitValue.length - 1; i > -1; i--){
 
 console.log(store.join(' '))
 ```
+
+# Day 2 Solution
+
+```
+// String reverse with reversing of individual words
+
+let str = "My Github username is sohail9744"
+
+//will make it split the word
+let split = str.split(' ')
+//will run reverse loop for this
+
+let aArray = []
+
+for(let i = split.length -1; i >= 0; i--){
+    aArray.push(split[i])
+}
+
+console.log(aArray.join(' '))
+```
+```
+// String reverse without using inbult function
+
+let str = "My Github username is sohail9744"
+
+console.log(str.split(' ').reverse().join(' '))
+
+```
+```
+// Find factorial of user input number
+const num = [1,2,3,5,6]
+
+// take one number from num
+for(let i = 0; i < num.length; i++){
+    let firstNum = num[i]
+
+//find the factorial number
+    let fact = 1
+    for(let f = 1; f <= firstNum; f++){
+        fact *= f
+    }
+    console.log(`factorial for ${firstNum} is ${fact}`)
+}
+```
+```
+// Check if a string is an Anagram
+
+const findAnagram = (str, str2) =>{
+    
+    if(!str || !str2){
+        return "Please Provide 2 arguments"
+    }
+    const store = []
+    const strLength = str.length
+    
+    // spliting the str value
+    for(let i = 0; i <= strLength; i++){
+        let strValue = str[i] // get first value
+        
+        for(let k = 0; k <= str2.length; k++){
+            //check str1 singal singal letter == to str2 letter
+            if(strValue === str2[k]){ 
+                store.push(strValue)
+                break
+            }
+        }
+    }
+    // check str length is equals to store length
+    if(strLength === store.length){
+        return true
+    } else{
+        return false
+    }
+}
+
+console.log(findAnagram('silent', 'listen')) // true
+```
