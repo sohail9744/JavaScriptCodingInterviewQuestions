@@ -619,7 +619,7 @@ for(let i = splitValue.length - 1; i > -1; i--){
 console.log(store.join(' '))
 ```
 
-# Day 2 Solution
+# Day 2 - Solutions
 
 ```
 // String reverse with reversing of individual words
@@ -694,4 +694,35 @@ const findAnagram = (str, str2) =>{
 }
 
 console.log(findAnagram('silent', 'listen')) // true
+```
+# Day 3 - Solutions
+
+```
+// To check the string or number is palindrome or not( ex: 121,madam,anna) using reverse method
+
+const checkPalindrome = (str) => {
+    str = str.toString();
+    
+    let reverse = str.split('').reverse().join('')
+    
+    return reverse === str ? 'It is palindrom' : 'It is not palindrom'
+
+}
+console.log(checkPalindrome("anna"));
+```
+
+```
+// To check the string or number is palindrome or not( ex: 121,madam,anna) using diving length by 2 and then comparing
+
+const checkPalindrome = (str) => {
+    str = str.toString();
+for(let i = 0; i < str.length / 2; i++){
+    if(str[i] !== str[str.length - 1 - i]){
+    return 'It is not a palindrome';
+    }
+}
+    
+    return 'It is a palindrome';
+}
+console.log(checkPalindrome("131")); // It is a palindrome
 ```
